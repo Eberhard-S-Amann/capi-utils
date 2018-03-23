@@ -450,7 +450,6 @@ int main (int argc, char *argv[])
 			address, fsize, fpga_file);
 	dprintf("  Program -> for Size: %d in blocks (%dK Words or %dK Bytes)\n\n",num_blocks,
 		flash_block_size/4 , flash_block_size);
-	exit(1);
 
 	dprintf("Reset Flash\n");
 	if (0 != flash_reset_wait(CFG, cntl_reg))
